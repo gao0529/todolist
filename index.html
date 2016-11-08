@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Document</title>
+		<link rel="stylesheet" href="css/index.css">
+	</head>
+	<body>
+		<header>
+			<section>
+				<form action="javascript:postaction()" id="form">
+					<label for="title">todolist</label>
+					<input type="text" id="title" name="title" placeholder="输入事件回车添加"  />
+					<!-- placeholder 提示信息 在输入字段为空时显示，并会在字段获得焦点时消失 -->
+				</form>
+			</section>
+		</header>
+		<section>
+			<h2 onclick="save()">未完成 <span id="todocount"></span></h2>
+			<ol id="todolist" class="demo-box">
+			</ol>
+			<h2>已完成 <span id="donecount"></span></h2>
+			<ul id="donelist">
+			</ul>
+			<footer>
+			<a href="javascript:clear();">清空</a>
+		</footer>
+		</section>	
+	<script type="text/javascript" src="js/index.js"></script>
+	</body>
+</html>
